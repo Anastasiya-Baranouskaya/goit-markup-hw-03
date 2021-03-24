@@ -50,6 +50,9 @@ body {
   line-height: 1.19;
   text-decoration: none;
 }
+.page-header {
+  border-bottom: 1px solid #e9e2e2;
+}
 .page-header .logo {
   margin-right: 93px;
 }
@@ -144,6 +147,7 @@ body {
   letter-spacing: 0.03em;
   color: #212121;
   border: none;
+  padding: 6px 22px;
 }
 
 .filter-button:focus,
@@ -231,6 +235,10 @@ body {
   display: flex;
   justify-content: center;
 }
+.container-list {
+  padding-bottom: 94px;
+}
+
 /* footer */
 .page-footer {
   background-color: var(--hero-footer-background-color);
@@ -298,21 +306,33 @@ body {
 .list-button:not(:last-child) {
   margin-right: 8px;
 }
-.list-button {
+/* .list-button {
   margin-top: 94px;
   margin-bottom: 50px;
+} */
+.container-button {
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
+
 .list {
   display: flex;
   flex-wrap: wrap;
   margin-top: 0;
   padding-left: 0;
   list-style-type: none;
+  margin-bottom: 0;
 }
 .list-portfolio {
-  width: calc(100% / 12 * 4);
+  max-width: 370px;
+  /* width: calc(100% / 12 * 4); */
 }
-.list-portfolio:not(:last-child) {
-  /* margin-right: 30px; */
+.list-portfolio:nth-child(-n + 6) {
   margin-bottom: 30px;
+}
+.list-portfolio {
+  margin-right: 30px;
+}
+.list-portfolio:nth-child(3n) {
+  margin-right: 0;
 }
