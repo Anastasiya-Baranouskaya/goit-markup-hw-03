@@ -61,6 +61,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 /* навигация по сайту */
 .link {
@@ -111,7 +113,9 @@ body {
   line-height: 1.36;
   padding-top: 200px;
   margin-bottom: 30px;
+  margin-top: 0;
 }
+
 /* кнопки */
 .button-primery {
   font-family: Roboto;
@@ -161,10 +165,12 @@ body {
   display: flex;
   padding-left: 0;
   margin-top: 0;
-  margin-bottom: 94px;
+  margin-bottom: 0;
 }
 .container-quality {
-  margin-top: 94px;
+  /* margin-top: 94px; */
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .list-quality {
   max-width: 270px;
@@ -175,11 +181,17 @@ body {
 }
 .container-working .site-title {
   margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 94px;
 }
 
+.container-team {
+  padding-bottom: 94px;
+}
 .list-img {
   max-width: 370px;
 }
+
 /* обзацы */
 .features-text {
   font-weight: normal;
@@ -197,7 +209,7 @@ body {
   line-height: 42px;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  margin-top: 94px;
+  margin-top: 0;
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
@@ -228,9 +240,11 @@ body {
   text-decoration: none;
 }
 .footer-logo {
-  margin-top: 60px;
+  margin-top: 0;
   margin-left: 0;
-  margin-bottom: 20px;
+  margin-bottom: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .site-footer {
@@ -238,7 +252,7 @@ body {
   font-weight: normal;
   font-style: normal;
   padding-left: 0;
-  margin-bottom: 60px;
+  margin-bottom: 0;
 }
 .list-footer:not(:last-child) {
   padding-bottom: 9px;
