@@ -26,6 +26,7 @@ body {
   background: #ffffff;
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
+  margin: 0;
 }
 .container {
   width: 1200px;
@@ -52,6 +53,8 @@ body {
 }
 .page-header {
   border-bottom: 1px solid #e9e2e2;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .page-header .logo {
   margin-right: 93px;
@@ -64,8 +67,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 /* навигация по сайту */
 .link {
@@ -107,14 +108,15 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
   font-style: normal;
   font-weight: 900;
-  font-size: 44px;
   line-height: 1.36;
-  padding-top: 200px;
+  font-size: 44px;
   margin-bottom: 30px;
   margin-top: 0;
 }
@@ -125,6 +127,7 @@ body {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
+  cursor: pointer;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -132,7 +135,6 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: #ffffff;
-  margin-bottom: 200px;
 }
 .button-cursor {
   cursor: pointer;
@@ -171,7 +173,7 @@ body {
   margin-top: 0;
   margin-bottom: 0;
 }
-.container-quality {
+.section-quality {
   /* margin-top: 94px; */
   padding-top: 94px;
   padding-bottom: 94px;
@@ -183,13 +185,13 @@ body {
 .list-img:not(:last-child) {
   margin-right: 30px;
 }
-.container-working .site-title {
+.section-working {
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 94px;
 }
 
-.container-team {
+.section-team {
   padding-bottom: 94px;
 }
 .list-img {
@@ -235,8 +237,72 @@ body {
   display: flex;
   justify-content: center;
 }
-.container-list {
+
+/* portfolio */
+
+.title-portfolio {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+  max-width: 322px;
+  margin: 0;
+  margin-bottom: 4px;
+}
+.examples-works {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  max-width: 322px;
+  margin: 0;
+}
+.site-nav {
+  display: flex;
+  justify-content: center;
+}
+.list-button:not(:last-child) {
+  margin-right: 8px;
+}
+.section-main {
+  padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.container-button {
+  padding-bottom: 50px;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+  padding-left: 0;
+  list-style-type: none;
+  margin-bottom: 0;
+}
+.container-portfolio {
+  padding: 20px 24px;
+  /* padding-top: 20px; */
+  /* padding-bottom: 4px; */
+  /* margin-left: 24px; */
+  /* margin-top: 0; */
+  /* margin-bottom: 20px; */
+}
+
+.list-portfolio {
+  max-width: 370px;
+  border: 1px solid #eeeeee;
+}
+.list-portfolio:nth-child(-n + 6) {
+  margin-bottom: 30px;
+}
+.list-portfolio {
+  margin-right: 30px;
+}
+.list-portfolio:nth-child(3n) {
+  margin-right: 0;
 }
 
 /* footer */
@@ -247,7 +313,16 @@ body {
   color: #ffffff;
   text-decoration: none;
 }
-.footer-logo {
+.site-footer .link-contacts {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+}
+.site-footer .link-contacts:hover,
+.site-footer .link-contacts:active {
+  color: var(--accent-text-color);
+}
+
+.page-footer {
   margin-top: 0;
   margin-left: 0;
   margin-bottom: 0;
@@ -274,65 +349,4 @@ body {
 .text-address:focus,
 .text-address:hover {
   color: var(--accent-text-color);
-}
-
-/* portfolio */
-
-.title-portfolio {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--title-text-color);
-  max-width: 322px;
-  margin-left: 24px;
-  margin-top: 20px;
-  margin-bottom: 4px;
-}
-.examples-works {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.87;
-  max-width: 322px;
-  margin-left: 24px;
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-.site-nav {
-  display: flex;
-  justify-content: center;
-}
-.list-button:not(:last-child) {
-  margin-right: 8px;
-}
-/* .list-button {
-  margin-top: 94px;
-  margin-bottom: 50px;
-} */
-.container-button {
-  padding-top: 94px;
-  padding-bottom: 50px;
-}
-
-.list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 0;
-  padding-left: 0;
-  list-style-type: none;
-  margin-bottom: 0;
-}
-.list-portfolio {
-  max-width: 370px;
-  /* width: calc(100% / 12 * 4); */
-}
-.list-portfolio:nth-child(-n + 6) {
-  margin-bottom: 30px;
-}
-.list-portfolio {
-  margin-right: 30px;
-}
-.list-portfolio:nth-child(3n) {
-  margin-right: 0;
 }
